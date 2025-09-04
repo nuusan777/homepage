@@ -1,0 +1,148 @@
+body {
+  background: linear-gradient(180deg, #f8f6e7 60%, #f8f6e7 80%, #fdf6e3 100%);
+  font-family: 'Hina Mincho', serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h1, h2 {
+  font-family: 'Hina Mincho', serif;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.sindan {
+  background: #fff;
+  border-radius: 32px;
+  margin: 40px auto 32px auto;
+  padding: 100px 30px 85px 30px;
+  width: 70%;
+  max-width: 370px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  position: relative;
+}
+.sindan h2 {
+  font-size: 3.0rem;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  letter-spacing: 0.03em;
+  font-family: 'Hina Mincho', serif;
+}
+.sindan a {
+  display: block;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.28em;
+  color: #222;
+  text-decoration: none;
+  margin-top: 4px;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 500;
+}
+
+.description {
+  text-align: center;
+  margin: 10px 0 32px 0;
+  position: relative;
+}
+.description h2 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.04em;
+  font-family: 'Hina Mincho', serif;
+}
+.description h1 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  letter-spacing: 0.04em;
+  font-family: 'Hina Mincho', serif;
+}
+.description p {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  letter-spacing: 0.02em;
+  font-family: 'Hina Mincho', serif;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+.link > div {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 18px 22px 12px 22px;
+  text-align: center;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 8px;
+}
+.link img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 10px;
+}
+.link p {
+  font-size: 1.12rem;
+  color: #8c7b7b;
+  margin: 0;
+  letter-spacing: 0.08em;
+  font-family: 'Hina Mincho', serif;
+  font-weight: 500;
+}
+
+/* 装飾画像配置例（実際の画像パスはpublic/img/に配置） */
+.sindan::before {
+  content: '';
+  position: absolute;
+  top: -36px;
+  right: 32px;
+  width: 130px;
+  height: 52px;
+  background: url('img/bluecloud.png') no-repeat center/contain;
+  opacity: 0.7;
+}
+.sindan::after {
+  content: '';
+  position: absolute;
+  bottom: -36px;
+  left: 32px;
+  width: 130px;
+  height: 52px;
+  background: url('img/pinkcloud.png') no-repeat center/contain;
+  opacity: 0.7;
+}
+.description::after {
+  content: '';
+  position: absolute;
+  bottom: 24px;
+  right: 40px;
+  width: 130px;
+  height: 52px;
+  background: url('img/yellowcloud.png') no-repeat center/contain;
+  opacity: 0.7;
+}
+.link .game {
+  position: relative;
+}
+.link .game::before {
+  content: '';
+  position: absolute;
+  top: -28px;
+  left: -24px;
+  width: 130px;
+  height: 52px;
+  background: url('img/purplecloud.png') no-repeat center/contain;
+  opacity: 0.7;
+}
