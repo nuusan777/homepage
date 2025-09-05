@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 @media (max-width: 600px) {
   .sindan::before {
     top: -28px !important;
@@ -34,7 +35,7 @@
     padding: 56px 18px 24px 18px;
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-    background: #fff;
+    background: #F8C98A;
     text-align: center;
   }
   .sindan h2 {
@@ -130,7 +131,7 @@ body {
 .description h2,
 .description h1,
 .description p {
-  color: #000000; /* 濃いグレー */
+  color: #111111; /* さらに濃い黒 */
 }
 
 h1, h2 {
@@ -186,34 +187,40 @@ h1, h2 {
     width: 70%;
     height: 80%;
   filter: blur(1px);
-    opacity: 0.4;
+    opacity: 0.25;
     pointer-events: none;
     z-index: 1;
-  background: linear-gradient(120deg, #f0f0f0 100%,);
+  background: linear-gradient(120deg, #f7e4c7 10%);
   border-radius: 32px;
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   box-shadow: 0 8px 32px rgba(0,0,0,0.10);
   padding: 40px 20px 32px 20px;
   
 }
 .description h2 {
-  font-size: 1.9rem;
+  font-size: 2.1rem;
+  font-weight: 500;
   margin-bottom: 15px;
   letter-spacing: 0.04em;
   font-family: 'Hina Mincho', 'Shippori Mincho', serif;
+    color: #111111;
 }
 .description h1 {
-  font-size: 1.8rem;
+  font-size: 2.0rem;
+  font-weight: 500;
   margin-bottom: 40px;
   letter-spacing: 0.04em;
   font-family: 'Hina Mincho', 'Shippori Mincho', serif;
+    color: #111111;
 }
 .description p {
-  font-size: 1.05rem;
+  font-size: 1.18rem;
+  font-weight: 500;
   margin-bottom: 30px;
   letter-spacing: 0.02em;
   font-family: 'Hina Mincho', 'Shippori Mincho', serif;
+    color: #111111;
 }
 
 .link {
