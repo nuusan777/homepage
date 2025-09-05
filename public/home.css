@@ -119,7 +119,7 @@
 }
 body {
   background: linear-gradient(180deg, #f8f6e7 60%, #f8f6e7 80%, #fdf6e3 100%);
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Hina Mincho', 'Shippori Mincho', serif;
   color: #222;
   margin: 0;
   padding: 0;
@@ -134,7 +134,7 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Hina Mincho', 'Shippori Mincho', serif;
   font-weight: normal;
   text-align: center;
   letter-spacing: 0.04em;
@@ -156,7 +156,7 @@ h1, h2 {
   margin-top: 10px;
   margin-bottom: 4px;
   letter-spacing: 0.0em;
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Hina Mincho', 'Shippori Mincho', serif;
 }
 .sindan a {
   display: block;
@@ -166,7 +166,7 @@ h1, h2 {
   color: #222;
   text-decoration: none;
   margin-top: 4px;
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Hina Mincho', 'Shippori Mincho', serif;
   font-weight: 500;
 }
 
@@ -201,19 +201,19 @@ h1, h2 {
   font-size: 1.9rem;
   margin-bottom: 15px;
   letter-spacing: 0.04em;
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Hina Mincho', 'Shippori Mincho', serif;
 }
 .description h1 {
   font-size: 1.8rem;
   margin-bottom: 40px;
   letter-spacing: 0.04em;
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Hina Mincho', 'Shippori Mincho', serif;
 }
 .description p {
   font-size: 1.05rem;
   margin-bottom: 30px;
   letter-spacing: 0.02em;
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Hina Mincho', 'Shippori Mincho', serif;
 }
 
 .link {
@@ -245,7 +245,7 @@ h1, h2 {
   color: #8c7b7b;
   margin: 0;
   letter-spacing: 0.08em;
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Hina Mincho', 'Shippori Mincho', serif;
   font-weight: 500;
   text-decoration: none;
 }
