@@ -1,13 +1,41 @@
 @media (max-width: 600px) {
-  body {
-    font-size: 1rem;
+  .sindan::before {
+    top: -28px !important;
+    right: 0px !important;
+    width: 120px !important;
+    height: 48px !important;
+    transform: scale(1.5) !important;
+    z-index: 1 !important;
+  }
+  .sindan::after {
+    bottom: -28px !important;
+    left: 0px !important;
+    width: 120px !important;
+    height: 48px !important;
+    transform: scale(1.5) !important;
+    z-index: 1 !important;
+  }
+  html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 17px;
+    background: linear-gradient(180deg, #f8f6e7 60%, #f8f6e7 80%, #fdf6e3 100%);
+    -webkit-text-size-adjust: 100%;
+  }
+  h1, h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.7em 0 0.5em 0;
   }
   .sindan {
-    width: 95%;
+    width: 92vw;
     max-width: 98vw;
-    margin: 24px auto 16px auto;
-    padding: 32px 8px 24px 8px;
+    margin: 48px auto 12px auto;
+    padding: 56px 18px 24px 18px;
     border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    background: #fff;
+    text-align: center;
   }
   .sindan h2 {
     font-size: 2.1rem;
@@ -16,11 +44,15 @@
   .sindan a {
     font-size: 1.1rem;
     margin-top: 4px;
+    display: block;
+    letter-spacing: 0.18em;
   }
   .description {
     padding: 24px 8px 16px 8px;
     border-radius: 18px;
     margin: 12px 0 16px 0;
+    background: none;
+    text-align: center;
   }
   .description h2 {
     font-size: 1.1rem;
@@ -35,21 +67,48 @@
     margin-bottom: 12px;
   }
   .link {
-    gap: 12px;
-    margin-top: 24px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    margin-top: 24px !important;
+    width: 100%;
+    padding: 0 4px;
+    box-sizing: border-box;
+    flex-wrap: wrap !important;
   }
   .link > div {
-    width: 80px;
-    padding: 10px 6px 6px 6px;
-    border-radius: 14px;
+    width: 26vw;
+    min-width: 70px;
+    max-width: 90px;
+    padding: 12px 6px 10px 6px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .link img {
     width: 36px;
     height: 36px;
     margin-bottom: 4px;
   }
-  .link p {
-    font-size: 0.9rem;
+  .link a {
+    font-size: 1rem;
+    color: #8c7b7b;
+    margin: 0;
+    letter-spacing: 0.08em;
+    font-family: 'Hina Mincho', serif;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+    font-size: 1.1rem;
+    touch-action: manipulation;
   }
 }
 /* ゲームアイコンとテキストを雲画像より前面に */
@@ -259,37 +318,67 @@ h1, h2 {
   z-index: 0;
 }
 
+  /* --- 追加: iPhone含む全スマホ対応 --- */
+  @media (max-width: 600px) {
+    html, body {
+      width: 100vw;
+      overflow-x: hidden;
+      font-size: 17px;
+      -webkit-text-size-adjust: 100%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .container, .sindan, .description, .link > div {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    .link {
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .link > div {
+      width: 95%;
+      min-width: 140px;
+      margin: 0 auto;
+      padding: 18px 10px 12px 10px;
+    }
+    .sindan {
+      padding: 28px 6px 18px 6px;
+      margin: 18px auto 14px auto;
+      max-width: 98vw;
+      font-size: 1.1rem;
+    }
+    .sindan h2 {
+      font-size: 2.0rem;
+    }
+    .description {
+      padding: 18px 6px 14px 6px;
+      margin: 10px 0 14px 0;
+      font-size: 1rem;
+    }
+    .description h1 {
+      font-size: 1.3rem;
+    }
+    .description h2 {
+      font-size: 1.1rem;
+    }
+    .description p {
+      font-size: 0.98rem;
+      margin-bottom: 10px;
+    }
+    a, button {
+      min-height: 44px;
+      min-width: 44px;
+      font-size: 1.1rem;
+      touch-action: manipulation;
+    }
+  }
+
 /* --- 追加: スマホ対応強化 --- */
-@media (max-width: 600px) {
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  .container, .sindan, .description, .link > div {
-    width: 100%;
-    padding: 8px;
-    font-size: 1rem;
-    box-sizing: border-box;
-  }
-  .link {
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 24px;
-  }
-  .link > div {
-    width: 90%;
-    min-width: 140px;
-    margin: 0 auto;
-  }
-  .sindan {
-    padding: 24px 4px 16px 4px;
-    margin: 16px auto 12px auto;
-    max-width: 98vw;
-  }
-  .description {
-    padding: 16px 4px 12px 4px;
-    margin: 8px 0 12px 0;
-  }
-}

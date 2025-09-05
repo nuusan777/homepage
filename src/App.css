@@ -123,36 +123,3 @@ h1, h2 {
 }
 
   /* --- 追加: スマホ対応強化 --- */
-  @media (max-width: 600px) {
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    .container, .sindan, .description, .link > div {
-      width: 100%;
-      padding: 8px;
-      font-size: 1rem;
-      box-sizing: border-box;
-    }
-    .link {
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 24px;
-    }
-    .link > div {
-      width: 90%;
-      min-width: 140px;
-      margin: 0 auto;
-    }
-    .sindan {
-      padding: 24px 4px 16px 4px;
-      margin: 16px auto 12px auto;
-      max-width: 98vw;
-    }
-    .description {
-      padding: 16px 4px 12px 4px;
-      margin: 8px 0 12px 0;
-    }
-  }
