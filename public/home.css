@@ -125,12 +125,12 @@ h1, h2 {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    height: 70%;
-  filter: blur(2px);
+    height: 80%;
+  filter: blur(1px);
     opacity: 0.4;
     pointer-events: none;
     z-index: 1;
-  background: linear-gradient(120deg, #e7e0be 10%);
+  background: linear-gradient(120deg, #f0f0f0 100%,);
   border-radius: 32px;
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -181,13 +181,14 @@ h1, h2 {
   height: 56px;
   margin-bottom: 10px;
 }
-.link p {
+.link a {
   font-size: 1.12rem;
   color: #8c7b7b;
   margin: 0;
   letter-spacing: 0.08em;
   font-family: 'Hina Mincho', serif;
   font-weight: 500;
+  text-decoration: none;
 }
 
 /* 装飾画像配置例（実際の画像パスはpublic/img/に配置） */
